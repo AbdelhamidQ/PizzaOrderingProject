@@ -18,7 +18,7 @@ git clone https://github.com/AbdelhamidQ/PizzaOrderingProject.git
 cd PizzaOrderingProject
 ```
 
-### you can run the executable JAR file located in the target directory:  
+### you can run the Programm using the executable JAR file located in the target directory:  
 ```
 java -jar target/pizza-order-system-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
