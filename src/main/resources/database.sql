@@ -15,3 +15,10 @@ CREATE TABLE order_details (
     cost DECIMAL(10, 2),  -- Price of a single pizza (used to calculate the total)
     FOREIGN KEY (order_id) REFERENCES orders(order_id)  -- Foreign key relationship to 'orders'
 );
+
+CREATE TABLE order_toppings (
+    topping_id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique identifier for each topping
+    order_id INT,  -- Foreign key to the 'orders' table to relate this topping to a specific order
+    topping VARCHAR(50),  -- The topping name
+    FOREIGN KEY (order_id) REFERENCES orders(order_id)  -- Foreign key relationship to 'orders'
+);
